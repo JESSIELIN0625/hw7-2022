@@ -67,16 +67,15 @@ document.querySelector("#slider").addEventListener("change", function () {
 document.querySelector("#vintage").addEventListener("click", function () {
 	console.log("Old School")
 	video = document.querySelector("video")
-	video.className = "oldSchool"
+	video.classList.add("oldSchool") = "video"
 
 });
 
 document.querySelector("#orig").addEventListener("click", function () {
 	console.log("Original")
 	video = document.querySelector("video")
-	video.className = "video"
+	video.classList.remove("oldSchool") = "video"
 });
-
 
 
 
